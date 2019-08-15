@@ -1,0 +1,67 @@
+/*公众样式*/
+/* CSS Document */
+html, body{ height:100%;font-size:12px;min-width: 1000px;overflow-x: auto;line-height:1!important;}
+body{font-family:Microsoft YaHei,arial,sans-serif;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input,button,select,textarea,label{outline:none;vertical-align:middle;}
+textarea{padding:5px;line-height:16px;resize:none;}
+img,ul,li,p,dl,dt,dd,li,ol,s,textarea{margin:0; border:0 none; padding:0; list-style-type:none;}
+body,form,input,select,label,button,xmp,h1,h2,h3,h4,h5,h6,label{margin:0;padding:0;line-height: 1; }
+em,i{ font-style:normal; list-style-type:none}
+.clearx:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearx {zoom:1;}
+.left{float:left;}
+.right{float:right;}
+img{display: block;}
+h2,h3,strong{font-weight: 100;}
+.text_c{text-align:center!important;}
+table{
+    font-size: 12px;
+    th{
+        text-align: center!important;
+        padding: 8px!important;
+        
+    }
+    td{
+        text-align: center;
+    }
+}
+.wrapWidth {
+    width: 1200px;
+    margin: 0 auto;
+}
+#root{
+    height: 100%;
+}
+.contentWrap{
+    padding: 10px!important;
+    background: #fff;
+}
+.btn {
+    background: -ms-linear-gradient(left top,#01b6f8,#1f7ffe);
+    background: -webkit-gradient(linear,0 0,0 100%,from(#01b6f8),to(#1f7ffe));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01b6f8', endColorstr='#1f7ffe', GradientType=0);
+    cursor: pointer;
+    width: 110px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    margin: 45px 0 0 30px;
+}
+.ant-spin-spinning{
+    position: fixed!important;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.ant-spin-container{
+    .ant-table-thead > tr > th{
+        background: #f0f3f6;
+        font-weight: 600;
+    }
+}
+@import './login.less';
+
+@import './index.less';

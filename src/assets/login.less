@@ -1,0 +1,144 @@
+@import 'color';
+.loginHeader{
+    height: 128px;
+    overflow: hidden;
+	ul{
+		li{
+			float: left;
+			margin: 0 30px;
+			a{
+				line-height: 128px;
+				font-size: 16px;
+			}
+		}
+	}
+	img{
+		margin-top: 23px;
+	}
+	.btn{
+		line-height: 38px;
+		color: #fff;
+	    text-align: center;
+	    margin: 45px 0 0 30px;
+	}
+}
+.input{
+	em{
+		display: none;
+		position: absolute;
+		.boxSize(22px;20px);
+		right: 14px;
+		top: 12px;
+		background: url(./img/login.png) no-repeat -28px 0;
+		cursor: pointer;
+	}
+	.isshow{
+		background-position: -63px 0;
+	}
+	.isshow.cur{
+		background-position: -100px 0;
+	}
+	
+}
+.tip{
+	color: #ff5402;
+	text-align: center;
+	line-height: 38px;
+	height: 38px;
+	font-size: 14px;
+	em{
+		display: inline-block;
+		.boxSize(14px;14px);
+		background: url(./img/error.png);
+		vertical-align: top;
+	    margin-top: 12px;
+	    margin-right: 10px;
+	}
+}
+.loginCont{
+	background: url(./img/loginBg.png) no-repeat center;
+	height: 600px;
+	.box{
+		.boxSize(380px;388px);
+		background: #fff;
+		margin-top: 105px;
+		.title{
+			text-align: center;
+			.textStyle(@color-match-desc;24px;100px);
+		}
+		.inputCont{
+			.boxSize(318px;46px);
+			border: 1px solid #d4d9dd;
+			margin: 0 auto 18px;
+			position: relative;
+			&:hover{
+				border-color: @color-match-desc;
+				color: @color-base;
+				.clearText{
+					background-position: 1px 0;
+				}
+			}
+			input{
+				width: 100%;
+				height: 44px;
+				text-indent: 20px;
+				line-height: normal;
+				font-size: 15px;
+				border: 0;
+			}
+			
+		}
+		.inputCont.error{
+			border-color: @color-match-desc;
+		}
+		.remember{
+			width: 318px;
+			margin: 0 auto;
+			font-size: 14px;
+			.check{
+				text-indent: 20px;
+				cursor: pointer;
+				line-height: 14px;
+				color: @color-text-hover;
+				background: url(./img/check.png) no-repeat left center;
+				user-select:none;
+			}
+			.checked{
+				background: url(./img/checked.png) no-repeat left center;
+			}
+			a{
+				color: @color-text-hover;
+				&:hover{
+					color: @color-match-desc;
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.loginBtn{
+			.boxSize(320px;46px);
+		}
+	}
+}
+
+.self_btn{
+	display: block;
+	line-height: 46px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	background: @color-match-desc;
+	&:hover{
+		color: #fff;
+		background: @color-mutual;
+	}
+}
+
+.copyright{
+	padding-top: 32px;
+	line-height: 24px;
+	color: @color-text-hover;
+	font-size: 14px;
+}

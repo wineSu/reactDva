@@ -1,0 +1,65 @@
+/***********color***********/
+@color-base: #1d2533;
+@color-text-hover:#535f6b;
+@color-light-gray:#8b939e;
+@color-desc:#b0b8c3;
+@color-bg:#f0f3f6;
+@color-white:#fff;
+@color-match:#ff5402;
+@color-match-hover:#ff874e;
+@color-crumb:#008fdb;
+@color-match-desc:#5a98da;
+@color-mutual:#7fb8f4;
+@color-list-hover:#f0f8ff;
+
+/*********mixin********/
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.box-shadow(@shadow){
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow: @shadow;
+    box-shadow: @shadow;
+}
+.boxSize(@width; @height) {
+     width: @width;
+     height: @height;
+}
+.bgSetSize(@wid; @hei){
+    -webkit-background-size: @wid @hei;
+    background-size: @wid @hei;
+}
+.transForm(@time){
+    -webkit-transition: all @time ease 0s;
+   -moz-transition: all @time ease 0s;
+   -ms-transition: all @time ease 0s;
+   -o-transition: all @time ease 0s;
+   transition: all @time ease 0s;
+}
+.textStyle(@col;@size;@height){
+    color: @col;
+    font-size: @size;
+    line-height: @height;
+}
+.layui-nav-em(@X){
+    a{
+        em{
+            background-position: @X -26px ;
+        }
+        &:hover{
+            em{
+                background-position: @X 0 ;
+            }
+        }
+    }
+}
+
+.layui-nav-itemed-em(@X){
+    a{
+        em{
+            background-position: @X 0;
+        }
+    }
+}
