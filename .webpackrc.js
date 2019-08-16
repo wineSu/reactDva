@@ -1,3 +1,4 @@
+let path = require('path')
 
 const config = {
   es5ImcompatibleVersions: true,
@@ -21,11 +22,15 @@ const config = {
   },
   commons:[{
     name: 'vendor',
-    filename: '[name].js'
+    filename: '[name].[hash].js'
   }],
+  hash: true,
   extraBabelPlugins: [
     ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]
   ],
+  html:{
+    "template": "./src/index.ejs"
+  },
   disableCSSModules:true,
   env: {
     development: {

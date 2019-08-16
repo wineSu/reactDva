@@ -26,37 +26,37 @@ const PrivateRoute = ({component: Component, ...rest}) => (
 function RouterConfig({ history, app }) {
   const Login = dynamic({
     app,
-    models: () => [import('./models/login')],  //动态引入model，可以引入多个model
-    component: () => import('./routes/Login')  //动态引入组件
+    models: () => [import('./models/login')],
+    component: () => import(/* webpackChunkName: "Login" */'./routes/Login')
   });
   const Layout = dynamic({
     app,
-    models: () => [import('./models/nav')],  //动态引入model，可以引入多个model
-    component: () => import('./layout/nav')  //动态引入组件
+    models: () => [import('./models/nav')],
+    component: () => import(/* webpackChunkName: "Layout" */'./layout/nav')
   });
   const IndexPage = dynamic({
     app,
-    component: () => import('./routes/IndexPage')  //动态引入组件
+    component: () => import(/* webpackChunkName: "IndexPage" */'./routes/IndexPage')
   });
   const List = dynamic({
     app,
-    models: () => [import('./models/list')],  //动态引入model，可以引入多个model
-    component: () => import('./routes/list')  //动态引入组件
+    models: () => [import('./models/list')],
+    component: () => import(/* webpackChunkName: "List" */'./routes/list')
   });
   const Ai = dynamic({
     app,
-    models: () => [import('./models/list'), import('./models/ai')],  //动态引入model，可以引入多个model
-    component: () => import('./routes/ai')  //动态引入组件
+    models: () => [import('./models/list'), import('./models/ai')],
+    component: () => import(/* webpackChunkName: "Ai" */'./routes/ai')
   });
   const Nnknown = dynamic({
     app,
-    models: () => [import('./models/unknow')],  //动态引入model，可以引入多个model
-    component: () => import('./routes/unknown')  //动态引入组件
+    models: () => [import('./models/unknow')],
+    component: () => import(/* webpackChunkName: "Nnknown" */'./routes/unknown')
   });
   const Known = dynamic({
     app,
-    models: () => [import('./models/know')],  //动态引入model，可以引入多个model
-    component: () => import('./routes/know')  //动态引入组件
+    models: () => [import('./models/know')],
+    component: () => import(/* webpackChunkName: "Known" */'./routes/know')
   });
   
   return (
