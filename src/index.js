@@ -1,6 +1,5 @@
 import dva from 'dva';
 import './assets/common.less';
-
 // 1. Initialize
 const app = dva({
     

@@ -25,6 +25,7 @@
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "husky": "^0.12.0",
     "immutable": "^4.0.0-rc.12",
     "query-string": "^6.8.1",
