@@ -4,11 +4,7 @@ const config = {
   es5ImcompatibleVersions: true,
   entry: {
     index:'./src/index.js',
-    vendor:[
-      'dva',
-      'react',
-      'react-dom',
-      'immutable',
+    antd: [
       'antd/lib/button',
       'antd/lib/icon',
       'antd/lib/table',
@@ -18,11 +14,17 @@ const config = {
       'antd/lib/grid',
       'antd/lib/input',
       'antd/lib/select',
-    ]
+    ],
+    vendor:[
+      'dva',
+      'react',
+      'react-dom',
+      'immutable',
+    ],
   },
   commons:[{
-    name: 'vendor',
-    filename: '[name].[hash].js'
+    name:  ['vendor', 'antd'],
+    minChunks: Infinity
   }],
   hash: true,
   extraBabelPlugins: [
