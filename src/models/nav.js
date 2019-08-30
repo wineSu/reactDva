@@ -33,7 +33,7 @@ export default {
                                 type:"setBar",
                                 bar:{
                                     name: "首页",
-                                    nextname:"用户列表"
+                                    nextname:"问题列表"
                                 }
                             })
                         break;

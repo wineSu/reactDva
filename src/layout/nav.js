@@ -80,7 +80,7 @@ export default class Nav extends PureComponent {
         console.log('导航组件渲染....')
         return (
             <Layout style={{ minHeight: '100vh',height: '100%' }}>
-                <Sider width={240} collapsible collapsed={this.state.collapsed}>
+                <Sider width={240}>
                     <div className="logo">
                         <img src="https://jicvps.qingguo.com/AntUser/dist/img/logo.png" alt="蚁呼"/>
                     </div>
@@ -113,7 +113,7 @@ export default class Nav extends PureComponent {
                         <Bar/>
                         <div>{this.props.children}</div>
                     </Content>
-                    <Footer style={{ textAlign: 'center' }}>Design ©2018 Created by SZ</Footer>
+                    <Footer style={{ textAlign: 'center' }}>©2018 青果时代科技</Footer>
                 </Layout>
                 {
                     this.state.modalVisible ?<Modal
